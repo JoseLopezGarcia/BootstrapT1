@@ -13,13 +13,14 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top w-100">
+	
+	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
 	<a href="index.html" class="card-link">
 		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
 	</a>
   	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
-	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	</button>
 	<form class="order-2 order-md-1 col-10 col-lg-6 mx-auto ml-lg-4">	  
 	  	<div class="input-group input-group-sm">
 		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -64,13 +65,20 @@
 
 <div class="container-fluid mt-3">
 	<div class="row ">
-		<div class="col-10 col-lg-2 border-right border-danger mx-auto">			
-			<nav class="navbar-expand-md" style="width: 100%!important">
-          
-	          <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	            <i class="fa fa-th fa-lg py-1" aria-hidden="true"></i>
-	          </button>
-	          <button class="btn btn-success d-block d-lg-none float-right">Boton</button>
+		<div class="col-11 col-lg-2 border-right border-danger mx-auto">			
+			<nav class="navbar-expand-lg" style="width: 100%!important">      		 
+		        
+	            <div class="w-100 d-block d-lg-none">
+	            	<button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			            <i class="fa fa-th fa-lg py-1" aria-hidden="true"></i>
+			        </button>
+		            <label for="buscar" class="align-self-stretch">Ordenar Por:</label>
+		            <select class="form-control w-50 float-right" id="buscar">
+		                <option selected="">Precio</option>
+		                <option>Ios</option>
+		                <option>Windows</option>
+		            </select>    
+	            </div>
 	          <div class="collapse navbar-collapse w-100 mx-auto" id="navbarNav">
 	            
 	              <ul class="nav flex-column mt-2 w-100 mx-auto">
@@ -197,7 +205,7 @@
 
 		</div>
 		<!-- Seccion card de la pagina -->
-		<div class="col-10 col-lg-10 mx-auto">
+		<div class="col-11 col-lg-10 mx-auto">
 			<div class="row d-none d-md-flex justify-content-around border-bottom border-danger mx-auto bg-light">
 				<div class="col-12 col-md-5">
 					<div class="input-group input-group-sm m-auto p-2">
@@ -214,7 +222,7 @@
 				<div class="col-10 col-md-5 mt-1 mt-md-0">
 					<div class="input-group input-group-sm m-auto justify-content-around p-2">  
 					    <div class="input-group-prepend mx-auto">
-					    	<span class="input-group-text px-3" id="#Prec">Ordenar Por:</span>
+					    	<span class="input-group-text px-1 px-lg-3" id="#Prec">Ordenar Por:</span>
 					  	</div>
 						<button type="button" class="btn btn-dark btn-sm mx-auto"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Precio</button>
 						<button type="button" class="btn btn-dark btn-sm mx-auto"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha</button>					  
@@ -491,7 +499,7 @@
                 </div>
       </div>        
     </div>              
-  </div>
+</div>
 					
 
 
