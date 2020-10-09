@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bt.png" type="image/x-png">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/misEstilos.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
+	  	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+	  <form class="col-10 col-lg-6 mx-auto">
+		  
+	  	<div class="input-group input-group-sm">
+		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+		  <div class="input-group-append">
+		    <button class="btn btn-outline-light" type="button" id="button-addon2">
+		    	<i class="fa fa-search"></i>
+		    </button>
+		  </div>
+		</div>
+
+	  </form>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	
+	    <ul class="navbar-nav ml-auto">
+	    	
+	      <li class="nav-item align-self-center">
+	      	<a href="index.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Inicio</a>
+	        <a class="nav-link d-block d-lg-none" href="index.html">Inicio</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="estadisticas.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Estadisticas</a>
+	        <a class="nav-link d-block d-lg-none" href="#">Nuevo Anuncio</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      		<i class="fa fa-plus-circle"></i>
+	      	</a>
+	        <a class="nav-link d-block d-lg-none" href="#">Carrito</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      		<i class="fa fa-shopping-cart"></i>
+	      	</a>
+	        <a class="nav-link d-block d-lg-none" href="estadisticas.html">Estadisticas</a>
+	      </li>
+	      <li class="nav-item ml-1 d-none d-lg-block">
+	      	<span class="badge badge-warning align-top">1</span>
+	      </li>
+	    </ul>
+	    
+	  </div>
+	</nav>
+<div class="container mt-5 shadow justify-content-center bg-light rounded">
+	<div class="row mb-2 pt-4">
+		<div class="col-12 col-lg-6 mx-auto">
+			<p class="h3 text-center">Ultimo mes.</p>
+		</div>
+	</div>
+	<div class="row my-5 py-4">
+		<div class="col-10 col-lg-5 mx-auto">
+			<h5 class="text-center">Ventas</h5>
+			<canvas id="Gbar"></canvas>
+		</div>
+		<div class="col-10 col-lg-5 mx-auto mt-5 mt-lg-0 pb-4">
+			<h5 class="text-center">Busquedas</h5>
+			<canvas id="Gpai"></canvas>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="js/graphics.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
