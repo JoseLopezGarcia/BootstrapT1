@@ -22,20 +22,16 @@ function Mostrar(imag){
 		reader.onload = function(e){
 			carrusel.innerHTML += "<div class='carousel-item h-100'><img src='"+e.target.result+"' class='w-100 h-100'> </div>"
 			
-			mostrarA();
+			
 		}
 		reader.readAsDataURL(imag.files[0]);
 	}
 }
 
-function mostrarA(){
-	console.log('Toast');
-		$('.toast').show()	;
-		
-	}
 
 
-  function alerta(){
+
+  function alertSuccess(){
     Swal.fire(
       'Hecho!',
       '',
@@ -43,4 +39,19 @@ function mostrarA(){
     );
 
     document.querySelector('#cerrarModal').click();
+  }
+
+  function alertConfirm(){
+  	Swal.fire({
+		  title: 'Realizar la compra?',
+		  
+		  showCancelButton: true,
+		  confirmButtonText: 'Comprar',
+		  
+		}).then((result) => {
+		  /* Read more about isConfirmed, isDenied below */
+		  if (result.isConfirmed) {
+		    Swal.fire('Compra realizada!', '', 'success')
+		  } 
+		})
   }
