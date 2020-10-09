@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="bt.png" type="image/x-png">
+	<title>Carrito</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/misEstilos.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top w-100">
+	
+	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
+	<a href="index.html" class="card-link">
+		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
+	</a>
+  	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
+	<form class="order-2 order-md-1 col-10 col-lg-6 mx-auto ml-lg-4">	  
+	  	<div class="input-group input-group-sm">
+		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+		  <div class="input-group-append">
+		    <button class="btn btn-outline-light" type="button" id="button-addon2">
+		    	<i class="fa fa-search"></i>
+		    </button>
+		  </div>
+		</div>
+	</form>
+
+    <div class="order-last collapse navbar-collapse" id="navbarSupportedContent">  	
+	    <ul class="navbar-nav ml-auto">	    	
+	      <li class="nav-item align-self-center">
+	      	<a href="index.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Inicio</a>
+	        <a class="nav-link d-block d-lg-none" href="index.html">Inicio</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="estadisticas.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Estadisticas</a>
+	        <a class="nav-link d-block d-lg-none" href="#" data-toggle="modal" data-target="#NuevoAnuncio">Nuevo Anuncio</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block" data-toggle="modal" data-target="#NuevoAnuncio">
+	      		<i class="fa fa-plus-circle"></i>
+	      	</a>
+	        <a class="nav-link d-block d-lg-none" href="#">Carrito</a>
+	      </li>
+	      <li class="nav-item align-self-center ml-2">
+	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      		<i class="fa fa-shopping-cart"></i>
+	      	</a>
+	        <a class="nav-link d-block d-lg-none" href="estadisticas.html">Estadisticas</a>
+	      </li>
+	      <li class="nav-item ml-1 d-none d-lg-block">
+	      	<span class="badge badge-warning align-top">1</span>
+	      </li>
+	    </ul>    
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-5">				
+			<h4 class="text-center h4">Lista de productos</h4>
+			<table class="table">
+			  <thead class="thead-dark">
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Nombre</th>
+			      <th scope="col">Marca</th>
+			      <th scope="col">Precio $</th>
+			      <th scope="col" class="text-center">Opcion</th>
+			    </tr>
+			  </thead>
+			  <tbody class="bg-light">
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>A10 2019</td>
+			      <td>Samung</td>
+			      <td>132.00</td>
+			      <td class="text-center">
+			      	<a href="#" class="btn btn-danger btn-sm ml-auto">
+			      		<i class="fa fa-trash-o"></i>
+			        </a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Y9 2018</td>
+			      <td>Huawei</td>
+			      <td>140.00</td>
+			      <td class="text-center">
+			      	<a href="#" class="btn btn-danger btn-sm ml-auto">
+			      		<i class="fa fa-trash-o"></i>
+			        </a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Mi 9A</td>
+			      <td>Xiaomi</td>
+			      <td>200.00</td>
+			      <td class="text-center">
+			      	<a href="#" class="btn btn-danger btn-sm ml-auto">
+			      		<i class="fa fa-trash-o"></i>
+			        </a>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+		<div class="col">
+			<h4 class="text-center h4">Detalles de compra</h4>
+			<div class="card text-center">
+			  <div class="card-title">
+			  	
+			  </div>
+			  <div class="card-body">
+			    <h5 class="card-title">Samung A10 2019</h5>			    
+			    <p class="card-text">
+			    	A10 con una pantalla HD+ de 6.2 pulgadas Infinity-V, es decir con notch en forma de gota de agua.  
+			    </p>
+			    <h5 class="card-title">$132.00</h5>
+			    <a href="#" class="btn btn-danger d-none d-md-inline" onclick="alertConfirm()">Comprar</a>
+			  </div>
+			  <div class="card-footer text-muted">
+			    Juan Perez 7898-7323
+			  </div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+<script src="js/pruebas.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nuevo-anuncioIMG.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+</body>
+</html>
