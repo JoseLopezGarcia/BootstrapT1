@@ -51,7 +51,14 @@ function Mostrar(imag){
 		}).then((result) => {
 		  /* Read more about isConfirmed, isDenied below */
 		  if (result.isConfirmed) {
-		    Swal.fire('Compra realizada!', '', 'success')
+		    Swal.fire('Compra realizada!', '', 'success').then((result)=>{
+		    	if (result.isConfirmed) {
+		    	
+				  window.location.href = "index.html";
+				}
+			});
+		    
+
 		  } 
 		})
   }

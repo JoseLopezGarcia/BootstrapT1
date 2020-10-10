@@ -17,11 +17,11 @@
 	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
-	<a href="index.html" class="card-link">
-		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
-	</a>
-  	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
-	<form class="order-2 order-md-1 col-10 col-lg-6 mx-auto ml-lg-4">	  
+	
+  	<a class="navbar-brand ml-2 d-none d-md-block py-0" href="index.html">
+  		<img src="Marca.png" alt="" height="40">
+  	</a>
+	<form class="order-2 order-md-1 col-10 col-md-8 col-lg-6 mx-auto ml-lg-4">	  
 	  	<div class="input-group input-group-sm">
 		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
 		  <div class="input-group-append">
@@ -35,10 +35,12 @@
     <div class="order-last collapse navbar-collapse" id="navbarSupportedContent">
   	
 	    <ul class="navbar-nav ml-auto">
-	    	
+	    	<li class="nav-item align-self-center d-inline d-md-none">
+	    		<img src="Marca.png" alt="" height="40">
+	    	</li>
 	      <li class="nav-item align-self-center">
-	      	<a href="index.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Inicio</a>
-	        <a class="nav-link d-block d-lg-none" href="index.html">Inicio</a>
+	      	<a href="index.html" class="btn btn-light btn-sm d-none d-lg-block">Inicio</a>
+	        <a class="nav-link d-block d-lg-none active" href="index.html">Inicio</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
 	      	<a href="estadisticas.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Estadisticas</a>
@@ -48,16 +50,16 @@
 	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block" data-toggle="modal" data-target="#NuevoAnuncio">
 	      		<i class="fa fa-plus-circle"></i>
 	      	</a>
-	        <a class="nav-link d-block d-lg-none" href="#">Carrito</a>
+	        <a class="nav-link d-block d-lg-none" href="carrito.html">Carrito</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
-	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      	<a href="carrito.html" class="btn btn-outline-light btn-sm d-none d-lg-block">
 	      		<i class="fa fa-shopping-cart"></i>
 	      	</a>
 	        <a class="nav-link d-block d-lg-none" href="estadisticas.html">Estadisticas</a>
 	      </li>
 	      <li class="nav-item ml-1 d-none d-lg-block">
-	      	<span class="badge badge-warning align-top">1</span>
+	      	<span class="badge badge-warning align-top">3</span>
 	      </li>
 	    </ul>    
   </div>
@@ -69,8 +71,8 @@
 			<nav class="navbar-expand-lg" style="width: 100%!important">      		 
 		        
 	            <div class="w-100 d-block d-lg-none">
-	            	<button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			            <i class="fa fa-th fa-lg py-1" aria-hidden="true"></i>
+	            	<button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			            <i class="fa fa-filter fa-lg py-1" aria-hidden="true"></i>
 			        </button>
 		            <label for="buscar" class="align-self-stretch">Ordenar Por:</label>
 		            <select class="form-control w-50 float-right" id="buscar">
@@ -205,10 +207,10 @@
 
 		</div>
 		<!-- Seccion card de la pagina -->
-		<div class="col-11 col-lg-10 mx-auto">
-			<div class="row d-none d-md-flex justify-content-around border-bottom border-danger mx-auto bg-light">
+		<div class="col-12 col-lg-10 mx-auto">
+			<div class="row d-none d-lg-flex justify-content-around border-bottom border-danger mx-auto bg-light">
 				<div class="col-12 col-md-5">
-					<div class="input-group input-group-sm m-auto p-2">
+					<div class="input-group input-group-sm m-auto py-2">
 					  <div class="input-group-prepend">
 					    <span class="input-group-text" id="PrecMin">Desde</span>
 					  </div>
@@ -220,7 +222,7 @@
 					</div>
 				</div>
 				<div class="col-10 col-md-5 mt-1 mt-md-0">
-					<div class="input-group input-group-sm m-auto justify-content-around p-2">  
+					<div class="input-group input-group-sm m-auto justify-content-around py-2">  
 					    <div class="input-group-prepend mx-auto">
 					    	<span class="input-group-text px-1 px-lg-3" id="#Prec">Ordenar Por:</span>
 					  	</div>
@@ -231,7 +233,7 @@
 			</div>
 			<!-- Seccion de las cards -->
 			<div class="row mt-3 justify-content-center">
-				<div class="col-5 col-lg-3 mb-4">
+				<div class="col-5 col-md-4  col-lg-3 mb-4">
 					
 				    <div class="card">
 				    	<a href="detalles.html">
@@ -244,7 +246,7 @@
 					    </div>
 				    </div>
 				</div>
-				<div class="col-5 col-lg-3 mb-4">
+				<div class="col-5 col-md-4  col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				      <div class="card-body">
@@ -255,7 +257,7 @@
 					    </div>
 				    </div>
 				</div>
-				<div class="col-5 col-lg-3 mb-4">
+				<div class="col-5 col-md-4  col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				      <div class="card-body">
@@ -266,7 +268,7 @@
 					    </div>
 				    </div>
 				</div>
-				  <div class="col-5 col-lg-3 mb-4">
+				  <div class="col-5  col-md-4 col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				      <div class="card-body">
@@ -277,9 +279,8 @@
 					    </div>
 				    </div>
 				  </div>
-			</div>
-			<div class="row mt-3 justify-content-center">
-				<div class="col-5 col-lg-3 mb-4">
+			
+				<div class="col-5 col-md-4  col-lg-3 mb-4">
 					
 				    <div class="card">
 				    <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>    
@@ -291,7 +292,7 @@
 					    </div>
 				    </div>
 				  </div>
-				  <div class="col-5 col-lg-3 mb-4">
+				  <div class="col-5 col-md-4  col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				        <div class="card-body">
@@ -302,7 +303,7 @@
 					    </div>
 				    </div>
 				  </div>
-				  <div class="col-5 col-lg-3 mb-4">
+				  <div class="col-5 col-md-4  col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				      <div class="card-body">
@@ -313,7 +314,7 @@
 					    </div>
 				    </div>
 				  </div>
-				  <div class="col-5 col-lg-3 mb-4">
+				  <div class="col-5 col-md-4  col-lg-3 mb-4">
 				    <div class="card">
 				      <a href="detalles.html"><img src="img/Samsung-Galaxy-A70.jpg" class="card-img-top" alt="..."></a>
 				      <div class="card-body">

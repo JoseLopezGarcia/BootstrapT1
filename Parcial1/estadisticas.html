@@ -15,11 +15,10 @@
 	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
-	<a href="index.html" class="card-link">
-		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
-	</a>
-  	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
-	<form class="order-2 order-md-1 col-10 col-lg-6 mx-auto ml-lg-4">	  
+	<a class="navbar-brand ml-2 d-none d-md-block py-0" href="index.html">
+  		<img src="Marca.png" alt="" height="40">
+  	</a>
+	<form class="order-2 order-md-1 col-10 col-md-8 col-lg-6 mx-auto ml-lg-4">	  
 	  	<div class="input-group input-group-sm">
 		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
 		  <div class="input-group-append">
@@ -31,29 +30,32 @@
 	</form>
 
     <div class="order-last collapse navbar-collapse" id="navbarSupportedContent">  	
-	    <ul class="navbar-nav ml-auto">	    	
+	    <ul class="navbar-nav ml-auto">	  
+	    	<li class="nav-item align-self-center d-inline d-md-none">
+	    		<img src="Marca.png" alt="" height="40">
+	    	</li>  	
 	      <li class="nav-item align-self-center">
 	      	<a href="index.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Inicio</a>
 	        <a class="nav-link d-block d-lg-none" href="index.html">Inicio</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
-	      	<a href="estadisticas.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Estadisticas</a>
+	      	<a href="estadisticas.html" class="btn btn-light btn-sm d-none d-lg-block">Estadisticas</a>
 	        <a class="nav-link d-block d-lg-none" href="#" data-toggle="modal" data-target="#NuevoAnuncio">Nuevo Anuncio</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
 	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block" data-toggle="modal" data-target="#NuevoAnuncio">
 	      		<i class="fa fa-plus-circle"></i>
 	      	</a>
-	        <a class="nav-link d-block d-lg-none" href="#">Carrito</a>
+	        <a class="nav-link d-block d-lg-none" href="carrito.html">Carrito</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
-	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      	<a href="carrito.html" class="btn btn-outline-light btn-sm d-none d-lg-block">
 	      		<i class="fa fa-shopping-cart"></i>
 	      	</a>
-	        <a class="nav-link d-block d-lg-none" href="estadisticas.html">Estadisticas</a>
+	        <a class="nav-link d-block d-lg-none active" href="estadisticas.html">Estadisticas</a>
 	      </li>
 	      <li class="nav-item ml-1 d-none d-lg-block">
-	      	<span class="badge badge-warning align-top">1</span>
+	      	<span class="badge badge-warning align-top">3</span>
 	      </li>
 	    </ul>    
   </div>

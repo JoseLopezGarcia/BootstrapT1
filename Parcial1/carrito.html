@@ -15,11 +15,11 @@
 	<button class="order-1 order-md-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
-	<a href="index.html" class="card-link">
-		<i class="fa fa-ils fa-2x text-light d-none d-md-block"></i>
-	</a>
-  	<a class="navbar-brand ml-2 d-none d-lg-block" href="index.html">CellPhone Shop</a>
-	<form class="order-2 order-md-1 col-10 col-lg-6 mx-auto ml-lg-4">	  
+	
+  	<a class="navbar-brand ml-2 d-none d-md-block py-0" href="index.html">
+  		<img src="Marca.png" alt="" height="40">
+  	</a>
+	<form class="order-2 order-md-1 col-10 col-md-8 col-lg-6 mx-auto ml-lg-4">	  
 	  	<div class="input-group input-group-sm">
 		  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
 		  <div class="input-group-append">
@@ -31,7 +31,10 @@
 	</form>
 
     <div class="order-last collapse navbar-collapse" id="navbarSupportedContent">  	
-	    <ul class="navbar-nav ml-auto">	    	
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item align-self-center d-inline d-md-none">
+	    		<img src="Marca.png" alt="" height="40">
+	    	</li>	    	
 	      <li class="nav-item align-self-center">
 	      	<a href="index.html" class="btn btn-outline-light btn-sm d-none d-lg-block">Inicio</a>
 	        <a class="nav-link d-block d-lg-none" href="index.html">Inicio</a>
@@ -44,25 +47,25 @@
 	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block" data-toggle="modal" data-target="#NuevoAnuncio">
 	      		<i class="fa fa-plus-circle"></i>
 	      	</a>
-	        <a class="nav-link d-block d-lg-none" href="#">Carrito</a>
+	        <a class="nav-link d-block d-lg-none active" href="?">Carrito</a>
 	      </li>
 	      <li class="nav-item align-self-center ml-2">
-	      	<a href="#" class="btn btn-outline-light btn-sm d-none d-lg-block">
+	      	<a href="?" class="btn btn-light btn-sm d-none d-lg-block">
 	      		<i class="fa fa-shopping-cart"></i>
 	      	</a>
 	        <a class="nav-link d-block d-lg-none" href="estadisticas.html">Estadisticas</a>
 	      </li>
 	      <li class="nav-item ml-1 d-none d-lg-block">
-	      	<span class="badge badge-warning align-top">1</span>
+	      	<span class="badge badge-warning align-top">3</span>
 	      </li>
 	    </ul>    
   </div>
 </nav>
 
 
-<div class="container mt-5">
+<div class="container my-5 ">
 	<div class="row">
-		<div class="col-5">				
+		<div class="col-10 col-lg-5 mx-auto">				
 			<h4 class="text-center h4">Lista de productos</h4>
 			<table class="table">
 			  <thead class="thead-dark">
@@ -111,28 +114,160 @@
 			  </tbody>
 			</table>
 		</div>
-		<div class="col">
-			<h4 class="text-center h4">Detalles de compra</h4>
+		<div class="col-10 col-lg-5 mx-auto">
+			<h6 class="text-center h5">Detalles de compra</h6>
 			<div class="card text-center">
 			  <div class="card-title">
 			  	
 			  </div>
 			  <div class="card-body">
-			    <h5 class="card-title">Samung A10 2019</h5>			    
-			    <p class="card-text">
-			    	A10 con una pantalla HD+ de 6.2 pulgadas Infinity-V, es decir con notch en forma de gota de agua.  
-			    </p>
-			    <h5 class="card-title">$132.00</h5>
-			    <a href="#" class="btn btn-danger d-none d-md-inline" onclick="alertConfirm()">Comprar</a>
+			    <h4 class="card-title">Monto Total</h4>			    
+			    
+			    <h4 class="card-title">$ 472.00</h4>
+			    <a class="btn btn-danger" onclick="alertConfirm()">Comprar</a>
 			  </div>
 			  <div class="card-footer text-muted">
-			    Juan Perez 7898-7323
+			     Mi Usuario
 			  </div>
 			</div>
 		</div>
 	</div>	
 </div>
 
+
+
+<div class="modal fade " id="NuevoAnuncio" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">                  
+        <div class="modal-header py-2">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo Anuncio</h5>                  
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>   
+        </div>        
+                <div class="modal-body">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-lg-5 mx-auto">
+                      <div class="row">
+                        <div class="col-8 mx-auto" style="height: 300px;">
+                          <div id="carouselExampleCaptions" class="carousel slide carousel-fade w-100 h-100" data-ride="carousel">  
+                              <div id="carusel-body" class="carousel-inner h-100 bg-dark border border-dark" >
+                                <div class="carousel-item h-100" data-interval="1500">
+                                  
+                                  <img src="img/AnuncioNew.PNG" class="w-100 h-100">
+                                    <div class="carousel-caption">
+                                      
+                                      <h5>Agregar Fotos</h5>
+                                      <input class="d-none" type="file" id="file-chooser"  accept="image/*" >
+                                      <button class="btn btn-outline-light" onclick="agregarIMG();">
+                                        <i class="fa fa-plus-circle fa-2x"></i>
+                                      </button>
+                                  </div>            
+                                </div>
+                                <div class="carousel-item h-100 active ">
+                                  <img src="img/s1.jpg" class="h-100 w-100">
+                                </div>            
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2 border-top border-danger">
+                          <div class="form-group mx-auto pt-2">
+                            <label for="Titulo">Titulo Breve</label>
+                            <input type="text" class="form-control form-control-sm" id="Titulo" value="A10 pantalla HD+ de 6.2">
+                          </div>
+                          <div class="form-group mx-auto">
+                            <div class="row">
+                              <div class="col-7">
+                                <label for="Vendedor">Vendedor</label>
+                                <input type="text" class="form-control form-control-sm" id="Vendedor" aria-describedby="emailHelp" value="Juan Perez">
+                              </div>
+                              <div class="col">
+                                <label for="Telefono">Telefono</label>
+                                <input type="text" class="form-control form-control-sm" id="Telefono" value="7898-7323">
+                              </div>                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>
+                    <div class="col-10 col-lg-5 mx-auto mt-1 mt-lg-0">  
+                        <div class="form-group mx-auto">
+                          <div class="row">
+                            <div class="col-4">
+                              <label for="Marca">Marca</label>
+                              <input type="text" class="form-control form-control-sm" id="Marca" aria-describedby="emailHelp" value="Samsung">
+                            </div>
+                            <div class="col-4">
+                              <label for="Modelo">Modelo</label>
+                              <input type="text" class="form-control form-control-sm" id="Modelo" value="A10 2019">
+                            </div>
+                            <div class="col-4">
+                              <label for="Pantalla">Pantalla</label>
+                              <input type="text" class="form-control form-control-sm" id="Pantalla" value="6.2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group mx-auto">
+                          <label for="Sistema">Sistema</label>
+                          <select class="form-control" id="Sistema">
+                            <option selected="">Android</option>
+                            <option>Ios</option>
+                            <option>Windows</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group w-100">
+                          <div class="row justify-content-between">
+                            <div class="col-5 ">
+                              <label for="rom">Rom GB</label>
+                              <input type="number" class="form-control form-control-sm" id="rom" value="32">
+                            </div>
+                            <div class="col-5 ">
+                              <label for="ram">Ram GB</label>
+                              <input type="number" class="form-control form-control-sm" id="ram" value="2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group w-100">
+                          <div class="row justify-content-between">
+                            <div class="col-5">
+                              <input type="radio" class="custom-radio" id="Nuevo" name="Estado" checked>
+                              <label class="form-check-label" for="Nuevo" >Nuevo</label>
+                            </div>
+                            <div class="col-5">
+                              <input type="radio" class="custom-radio" id="Usado" name="Estado">
+                              <label class="form-check-label" for="Usado">Usado</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group w-100">
+                          <label for="Precio">Precio $</label>
+                          <input type="text" placeholder="$" class="form-control form-control-sm" id="Precio" value="132.00">
+                        </div>
+                        <div class="form-group w-100">
+                          <label for="desc">Descripcion</label>
+                          <textarea class="form-control" rows="2" id="desc">El Samsung Galaxy A10 se suma al Galaxy A30 y A50 con una pantalla HD+ de 6.2 pulgadas Infinity-V, es decir con notch en forma de gota de agua. Potenciado por un procesador Exynos 7884 de ocho núcleos, el Galaxy A10 cuenta con 2GB de memoria RAM y 32GB de almacenamiento interno expandible.
+                          </textarea>
+                        </div>                        
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="cerrarModal" type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm" onclick="alertSuccess()">Publicar</button>
+                </div>
+      </div>        
+    </div>              
+</div>
 
 <script src="js/pruebas.js"></script>
 <script src="js/popper.min.js"></script>
